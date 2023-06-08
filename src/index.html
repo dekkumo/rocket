@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+  "title":"Макет"
+})
+<body>
+  <div class="wrapper">
+    @@include('html/modal.html', {})
+    <header>
+      @@include('html/header.html',{})
+    </header>
+    <main>
+      @@include('html/mainPage.html',{})
+      @@include('html/checkUp.html',{})
+    </main>
+    <footer>
+    @@include('html/footer.html',{})
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+</html>

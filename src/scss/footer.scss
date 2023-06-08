@@ -1,0 +1,109 @@
+.footer {
+  &__wrapper {
+    background: #08664F;
+  }
+  &__container {
+  }
+  &__body {
+    padding: 42px 0 41px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    flex: 50%;
+    margin-bottom: 31.1px;
+  }
+  &__nav {
+    order: 3;
+  }
+  &__messengers {
+  }
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__link {
+    color: #FFFFFF;
+  }
+}
+.block-link {
+}
+.link {
+}
+.messengers {
+  display: flex;
+  gap: 20px;
+
+  &__icon {
+  }
+}
+
+@media(min-width: $bp-xs) {
+  .footer {
+    &__body {
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__logo {
+      flex: 0;
+      margin-bottom: 0;
+    }
+    &__nav {
+      order: 0;
+    }
+  }
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media(min-width: $bp-sm) {
+  .messengers {
+    &__icon {
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+  .nav {
+    gap: 25px;
+  }
+}
+
+@media(min-width: $bp-lg) {
+  .footer {
+    &__body {
+      padding: 54px 0 55px;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    &__logo {
+      flex: none;
+      margin-bottom: 0;
+    }
+    &__nav {
+    }
+  }
+  .nav {
+    display: flex;
+    gap: 30px;
+  }
+  .link {
+    display: block;
+  }
+  .messengers {
+    gap: 15px;
+
+    &__icon {
+      img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}
